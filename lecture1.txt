@@ -1,6 +1,46 @@
 10/19/15
 
+Professor Shobaki
+    SUN compiler
+    14% improvement on one test compiler
+
 open source compiler:
-    LLVM
-    gcc
+    LLVM ~2003 c++
+    gcc ~1980s c
     open64
+
+what are we doing?
+    enhancing LLVM
+        1. new algorithims
+            main objective
+        2. optimizing existing algorithims to get better performance
+            
+what to write?
+    
+    frontend
+        converts source language c/c++ into some intermediate representation
+        1. lexing
+        2. parsing
+        3. semantic analysis
+            a.AST abstract syntax tree
+
+    backend
+        turns IR into machine code
+        instr. selection
+        instr.sched
+        reg.allocation
+
+        abstract syntax tree into linear representation of code
+            
+        turns variables into addresses
+        loads addresses into registers
+        then has to map virtual registers into physical registers
+
+stuff to know?
+    graph algorithims
+        dependence graph
+        control flow graph
+        conflict graphs
+
+
+
